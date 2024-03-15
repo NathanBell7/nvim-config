@@ -1,0 +1,4 @@
+:LspRestart to refresh Lsp when broken :)
+:noh to unhighlight highlighted words from using /
+:so to make changes to config files known
+:PackerSync to update installed plugins
