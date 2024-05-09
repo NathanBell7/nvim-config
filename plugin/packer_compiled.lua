@@ -84,20 +84,25 @@ _G.packer_plugins = {
     path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["darcula-solid.nvim"] = {
+    loaded = true,
+    path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/darcula-solid.nvim",
+    url = "https://github.com/briones-gabriel/darcula-solid.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  harpoon = {
-    loaded = true,
-    path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/Nathan/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
