@@ -10,7 +10,7 @@ require("gitsigns").setup({
 		--buffer
 		vim.keymap.set("n", "<leader>gsb", gitsigns.stage_buffer)
 		vim.keymap.set("n", "<leader>gub", gitsigns.reset_buffer_index)
-		vim.keymap.set("n", "<leader>grb", gitsigns.reset_buffer_index)
+		vim.keymap.set("n", "<leader>grb", gitsigns.reset_buffer)
 
 		--toggle
 		vim.keymap.set("n", "<leader>gd", gitsigns.diffthis)

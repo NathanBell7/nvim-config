@@ -2,3 +2,4 @@
 :noh to unhighlight highlighted words from using /
 :so to make changes to config files known
 :PackerSync to update installed plugins
+:TSUpdate if treesitter is broken(it will be)

@@ -42,4 +42,16 @@ return require("packer").startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
+
+	use("github/copilot.vim")
+
+	use({
+		"Equilibris/nx.nvim",
+		requires = {
+			"nvim-telescope/telescope.nvim",
+		},
+		config = function()
+			require("nx").setup({})
+		end,
+	})
 end)
