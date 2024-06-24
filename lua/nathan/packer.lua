@@ -4,9 +4,11 @@
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
+
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
+  -- Telescope to find files by name or content
 	use({
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.5",
@@ -14,6 +16,7 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
+  -- vim practice
 	use("ThePrimeagen/vim-be-good")
 
 	use({
@@ -31,18 +34,25 @@ return require("packer").startup(function(use)
 		},
 	})
 
+  -- Treesitter for better syntax colouring
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
+  -- Better filetree
 	use("nvim-tree/nvim-tree.lua")
 
+  -- Nvim filetree icons
 	use("nvim-tree/nvim-web-devicons")
 
+  -- Prettier support with none-ls
 	use("nvimtools/none-ls.nvim")
-
+  
+  -- Git support
 	use("lewis6991/gitsigns.nvim")
 
+  -- Colour theme
 	use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
 
+  -- Github copilot
 	use("github/copilot.vim")
 
 end)
