@@ -8,7 +8,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'pyright', 'clangd', 'html', 'cssls', 'eslint', 'tsserver', 'gopls'},
+  ensure_installed = {'pyright', 'clangd', 'html', 'cssls', 'eslint', 'tsserver', 'gopls', 'tailwindcss'},
   handlers = {
     lsp_zero.default_setup,
   },
