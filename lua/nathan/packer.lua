@@ -1,11 +1,15 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
--- Only required if you have packer configured as `opt`
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
+
+  -- Package Manager:
+
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
+
+
+
+  -- File Sorting:
 
 	-- Telescope to find files by name or content
 	use({
@@ -15,9 +19,11 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-	-- vim practice
-	use("ThePrimeagen/vim-be-good")
 
+
+  -- Language Server Protocol:
+
+	-- LSP zero for easy lsp setup
 	use({
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v3.x",
@@ -33,24 +39,34 @@ return require("packer").startup(function(use)
 		},
 	})
 
-	-- Treesitter for better syntax colouring
+	-- Formatting support with none-ls
+	use("nvimtools/none-ls.nvim")
+
+	-- Better syntax colouring
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
+
+
+  -- Quality of Life:
+  
+	-- Git support
+	use("lewis6991/gitsigns.nvim")
+  
 	-- Better filetree
 	use("nvim-tree/nvim-tree.lua")
 
 	-- Nvim filetree icons
 	use("nvim-tree/nvim-web-devicons")
 
-	-- Prettier support with none-ls
-	use("nvimtools/none-ls.nvim")
-
-	-- Git support
-	use("lewis6991/gitsigns.nvim")
-
 	-- Colour theme
 	use({ "briones-gabriel/darcula-solid.nvim", requires = "rktjmp/lush.nvim" })
 
-	-- Github copilot
-	use("github/copilot.vim")
+	-- Better statusline
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
+
+	-- Vim practice
+	use("ThePrimeagen/vim-be-good")
 end)

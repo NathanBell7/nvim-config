@@ -6,7 +6,11 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+vim.opt.showtabline = 2
+
 vim.opt.wrap = false
+
+vim.opt.splitright = true
 
 vim.opt.incsearch = true
 
