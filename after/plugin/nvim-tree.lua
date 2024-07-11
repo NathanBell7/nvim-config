@@ -28,11 +28,14 @@ require("nvim-tree").setup({
 			return math.floor(vim.opt.columns:get() * WIDTH_RATIO)
 		end,
 	},
+	actions = {
+		open_file = {
+			window_picker = { enable = false },
+		},
+	},
 })
 
 local api = require("nvim-tree.api")
+require("nvim-tree").filesystem_watchers = enable
 vim.keymap.set("n", "<leader>pv", api.tree.open)
 vim.keymap.set("n", "<Esc>", api.tree.close)
-vim.keymap.set("n", "<leader><Right>", "gt")
-vim.keymap.set("n", "<leader><Left>", "gT")
-require("nvim-tree").filesystem_watchers = enable

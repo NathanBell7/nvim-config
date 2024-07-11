@@ -1,15 +1,12 @@
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
-
-  -- Package Manager:
+	-- Package Manager:
 
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
-
-
-  -- File Sorting:
+	-- File Sorting:
 
 	-- Telescope to find files by name or content
 	use({
@@ -19,9 +16,7 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 
-
-
-  -- Language Server Protocol:
+	-- Language Server Protocol:
 
 	-- LSP zero for easy lsp setup
 	use({
@@ -45,13 +40,17 @@ return require("packer").startup(function(use)
 	-- Better syntax colouring
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
+	-- Quality of Life:
 
+	-- Better tabs as workspaces
+	use({
+		"nanozuki/tabby.nvim",
+		dependencies = "nvim-tree/nvim-web-devicons",
+	})
 
-  -- Quality of Life:
-  
 	-- Git support
 	use("lewis6991/gitsigns.nvim")
-  
+
 	-- Better filetree
 	use("nvim-tree/nvim-tree.lua")
 

@@ -1,7 +1,7 @@
 local lsp_zero = require("lsp-zero")
 local null_ls = require("null-ls")
 
--- Setup packages 
+-- Setup packages
 lsp_zero.on_attach(function(client, bufnr)
 	lsp_zero.default_keymaps({ buffer = bufnr })
 end)
@@ -29,7 +29,6 @@ null_ls.setup({
 	},
 })
 
-
 require("nvim-treesitter.configs").setup({
 	ensure_installed = {
 		"c",
@@ -54,6 +53,3 @@ require("nvim-treesitter.configs").setup({
 		additional_vim_regex_highlighting = false,
 	},
 })
-
--- Keymaps
-vim.keymap.set("n", "<leader>fo", vim.lsp.buf.format, {})

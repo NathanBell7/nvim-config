@@ -10,8 +10,6 @@ vim.opt.showtabline = 2
 
 vim.opt.wrap = false
 
-vim.opt.splitright = true
-
 vim.opt.incsearch = true
 
 --vim.opt.colorcolumn = "80"

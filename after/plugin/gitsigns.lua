@@ -18,7 +18,7 @@ require("gitsigns").setup({
 		vim.keymap.set("n", "<leader>gtb", gitsigns.toggle_current_line_blame)
 
 		--navigation
-		vim.keymap.set("n", "<leader>gn", gitsigns.next_hunk)
+		vim.keymap.set("n", "<leader>gn", gitsigns.prev_hunk)
 		vim.keymap.set("n", "<leader>gp", gitsigns.next_hunk)
 	end,
 })
