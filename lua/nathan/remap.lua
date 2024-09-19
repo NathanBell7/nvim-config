@@ -30,4 +30,7 @@ vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>")
 -- LSP
 vim.keymap.set("n", "<leader>fo", vim.lsp.buf.format, {})
 vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>r", vim.lsp.buf.references, {})
+vim.keymap.set("n", "<leader>re", vim.lsp.buf.references, {})
+vim.keymap.set("n", "<leader>i", vim.lsp.buf.hover, {})
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
+vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, {})

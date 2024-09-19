@@ -26,3 +26,6 @@ vim.opt.timeout = false
 vim.opt.ttimeout = false
 vim.cmd("colorscheme darcula-solid")
 vim.cmd("set termguicolors")
+
+vim.opt.splitright = true
+vim.opt.splitright = true

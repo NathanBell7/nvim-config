@@ -3,6 +3,7 @@ local WIDTH_RATIO = 0.5 -- You can change this too
 
 require("nvim-tree").setup({
 	view = {
+    relativenumber = true,
 		float = {
 			enable = true,
 			open_win_config = function()
@@ -35,7 +36,7 @@ require("nvim-tree").setup({
 	},
 })
 
-local api = require("nvim-tree.api")
 require("nvim-tree").filesystem_watchers = enable
+local api = require("nvim-tree.api")
 vim.keymap.set("n", "<leader>pv", api.tree.open)
 vim.keymap.set("n", "<Esc>", api.tree.close)
